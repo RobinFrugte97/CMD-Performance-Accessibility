@@ -1,4 +1,4 @@
-# Project 2 @cmda-minor-web · 2018-2019
+# Project 2 @cmda-minor-web · 2019-2020
 
 ## Aanbevelingen voor een robuste, toegankelijke en snelle web toepassing
 
