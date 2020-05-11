@@ -1,0 +1,27 @@
+{
+  "name": "project-2-1920",
+  "version": "1.0.0",
+  "description": "Project 2 19-20 CMD website",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinFrugte97/project-2-1920.git"
+  },
+  "author": "Robin Frugte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobinFrugte97/project-2-1920/issues"
+  },
+  "homepage": "https://github.com/RobinFrugte97/project-2-1920#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}
