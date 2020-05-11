@@ -9,7 +9,12 @@ app.set('view engine', 'ejs')
 app.set('views', 'views')
 
 app.get("/", (req, res) => {
-    res.redirect('/home')
+    fetch("https://www.cmd-amsterdam.nl/wp-json/wp/v2/pages/8901")
+        .then((resp) => resp.json())
+        .then(index => {
+            let html = index.content.rendered
+            res.render('index.ejs')
+        }).catch(err => console.log(err))
 })
 
 app.listen(port, () => {
