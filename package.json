@@ -8,10 +8,11 @@
   },
   "scripts": {
     "start": "node index.js",
-    "predev": "npm run build:css",
+    "predev": "npm run build:css & npm run build:js",
     "dev": "nodemon index.js",
     "build:css": "node scripts/buildcss.js",
-    "prebuild:css": "rimraf dist"
+    "prebuild:css": "rimraf static/dist & rimraf static/temp",
+    "build:js": "node scripts/buildjs.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   "homepage": "https://github.com/RobinFrugte97/project-2-1920#readme",
   "devDependencies": {
     "express": "^4.17.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.2",
     "node-fetch": "^2.6.0"
   },
   "dependencies": {

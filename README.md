@@ -10,6 +10,12 @@ Om te beginnen heb ik een audit gedraaid op de home-pagina van de [CMD website](
 
 De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei nietszeggende elementen, zoals `div`'jes en `span`'s. Voor screenreaders is dit onbruikbaar en dus totaal niet accessible.
 
+### Scripts
+
+Er zijn een heel aantal plugins aanwezig op de cmd website. Deze plugins worden door middel van Jquery en normale Javascript bestanden ingeladen. Namelijk 28(!). Sommige scripts zijn ontzettend overbodig, zoals de Woocommerce en andere shoppingcart scripts. Deze functionaliteit wordt namelijk helemaal niet gebruikt op de cmd website.
+
+De scripts worden ook niet `async` of `defer` ingeladen.
+
 # Lokale versie CMD website
 
 De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 op 1 over te zetten naar een lokale versie zonder toegang tot de wordpress omgeving en de backend. De lokale website ziet er iets anders uit, maar heeft erg vergelijkbare performances.
@@ -24,7 +30,8 @@ De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 o
 - ✅ Verwijder nutteloze/niet gebruikte code (Performance/accessibility fix)
 - Voeg caching toe (Performance fix)
 - Meer pagina's uitwerken
-- ...
+- ✅ Lazyloader voor images (Performance fix)
+- ✅ Minify JS (Performance fix)
 
 
 # Verbeteringen
@@ -87,3 +94,40 @@ Ik heb gekozen om verder te gaan met de kleuren die de lokale versie biedt. De s
 ### Nieuw button contrast:
 
 ![](/ss/goodrating.png)
+
+## Focus- en hover-states
+
+De CMD website heeft totaal geen focus-states en geen of hele slechte hover-states. Dit is een probleem voor mensen die hun muis niet kunnen gebruiken en de website met hun toetsenbord moeten navigeren.
+
+![](/ss/goodfocus.png)
+
+
+## Gulp
+
+
+
+
+## Overige fixes
+
+### Lazyloader
+
+Lazyloader toegevoegd om de website sneller in te laden. Alleen de zichtbare images worden geladen, de rest wordt pas geladen wanneer ze in beeld komen.
+
+### Doctype
+
+
+
+### Metadata
+
+
+
+
+# REMOVE
+
+Todo:
+
+Contact pagina
+
+- verwijder google maps.. Waarom op de contact pagina??
+
+

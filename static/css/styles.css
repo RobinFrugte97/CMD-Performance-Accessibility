@@ -85,6 +85,19 @@ header > a {
 	text-decoration: none;
 }
 
+header ul > li > a:hover {
+    font-size: 150%;
+    text-decoration: underline;
+    border: none;
+} 
+
+header ul > li > a:focus {
+    outline: none;
+    font-size: 150%;
+    text-decoration: underline;
+    border: none;
+}
+
 header > nav {
 	width: 239%;
 }
@@ -136,10 +149,10 @@ header ul:nth-of-type(2) {
 
 .bannerContent {
 	top: 304px;
-    width: 88%;
+    width: 81%;
     position: absolute;
     z-index: 100;
-    left: 12%;
+    left: 19%;
 }
 
 .bannerContent > h2 {
@@ -177,6 +190,18 @@ header ul:nth-of-type(2) {
     transition: border-color .2s linear,background-color .2s linear;
     opacity: 1;
     vertical-align: middle;
+}
+
+.bannerContent > a:hover {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
+}
+
+.bannerContent > a:focus {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
 }
 
 .mainContent {
@@ -227,6 +252,18 @@ header ul:nth-of-type(2) {
     padding: 15px 22px;
 }
 
+.mainContent a:hover {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
+}
+
+.mainContent a:focus {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
+}
+
 .mainContent img {
 	width: 49%;
 }
@@ -239,6 +276,10 @@ iframe {
 	width: 851px;
 	height: 409.125px;
     border: 0;
+}
+
+iframe:focus-within {
+    border: black solid 1em
 }
 
 footer {
@@ -276,6 +317,18 @@ footer h3 {
     display: inline-block;
     border-radius: 5px 5px 5px 5px;
     padding: 16px 21px;
+}
+
+.calltoaction:hover {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
+}
+
+.calltoaction:focus {
+    outline: none;
+    background-color: #000;
+    color: #6bc1b9;
 }
 
 .copyright {
