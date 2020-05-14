@@ -1,0 +1,73 @@
+header {
+	padding: 10px 17.5%;
+    top: 0;
+    position: fixed;
+	background: white;    
+	display: flex!important;
+	flex-direction: row;
+	position: relative;
+    z-index: 9998;
+    width: 100%;
+}
+
+header > a {
+	display: inline-block!important;
+	padding-left: 1em;
+	width: auto;
+    max-width: none;
+    line-height: 22px;
+    font-size: 22px;
+    letter-spacing: -1.5px;
+    color: #444;
+    font-family: 'Open Sans';
+	font-weight: 600;
+	text-decoration: none;
+}
+
+header ul > li > a:hover {
+    background-color: #6bc1b9;
+	border: none;
+	outline: none;
+} 
+
+header ul > li > a:focus {
+    background-color: #6bc1b9;
+	border: none;
+	outline: none;
+}
+
+header > nav {
+	width: 239%;
+}
+
+header ul {
+	float: right;
+	overflow: visible!important;
+	transition: padding .8s ease;
+    min-height: 1px;
+	line-height: 1px;
+	margin-left: 15px;
+	list-style: none;
+	margin-top: 5px;
+}
+
+header ul > li {
+	float: left;
+	margin-top: .5em;
+}
+
+header ul > li > a {
+	padding: 8px;
+    border-radius: 2px;
+	color: #000;
+    margin-right: 10px;
+	margin-left: 10px;
+	transition: ease .2s;
+}
+
+header ul:nth-of-type(2) {
+	list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}

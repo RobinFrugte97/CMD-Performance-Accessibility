@@ -1,0 +1,125 @@
+form {
+    width: 50%;
+    padding-right: 0;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+}
+
+legend {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+
+input[type=text], textarea {
+    padding: 10px!important;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #555;
+    background-color: #efefef;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09) inset;
+    transition: all 0.2s linear;
+}
+
+input[type=submit] {
+    border-radius: 5px 5px 5px 5px;
+    transition: opacity .3s linear;
+    color: #000;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    top: -3px;
+    margin-bottom: 10px;
+    opacity: 1;
+    line-height: 20px;
+    background-color: #27cfc3;
+	display: inline-block;
+	font-size: 13px;
+    padding: 15px 22px;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+    color: #27cfc3;
+    background-color: #000;
+}
+
+label {
+    line-height: 24px;
+}
+
+#contactArticle {
+    padding-left: 2%;
+    padding-top: 3em;
+}
+
+#contactArticle img {
+    width: 100%;
+}
+
+#contactArticle a {
+    border-radius: 0; 
+    transition: none;
+    color: #000;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    text-transform: none;
+    top: 0;
+    margin-bottom: 0;
+    opacity: 1;
+    line-height: 20px;
+    background-color: white;
+    font-size: 100%;
+    padding: 0;
+}
+
+#contactArticle a:hover, :focus {
+    text-decoration: underline;
+}
+
+#contactSection {
+    margin-bottom: 7em;
+}
+
+.info {
+    width: 64%;
+    font-size: 17px;
+}
+
+.mainContent > h3 {
+    padding: 1em 19em;
+}
+
+#contactTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contactPersoon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0S;
+}
+
+.contactPersoon img {
+    width: 100%!important;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+    
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/nav') %>
+
+    <main class="mainContent">
+        <section id="contactSection">
+            <form action="" id="contactForm">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="naam">Naam *</label>
+                    <input id="naam" type="text" name="contactForm">
+                    <label for="mail">Mailadres (i.v.m. reply) *</label>
+                    <input id="mail" type="text" name="contactForm">
+                    <label for="onderwerp">Onderwerp</label>
+                    <input id="onderwerp" type="text" name="contactForm">
+                    <label for="inhoud">Inhoud bericht</label>
+                    <textarea name="contactForm" id="inhoud" cols="30" rows="10"></textarea>
+                    <input type="submit" for="contactForm">
+                </fieldset>
+            </form>
+            <article id="contactArticle">
+                <img src="https://www.cmd-amsterdam.nl/wp-content/uploads/2013/11/contact-cmd.jpg" alt="">
+                <h3>Communication and Multimedia Design Amsterdam</h3>
+                <p class="info">Hogeschool van Amsterdam | Theo Thijssenhuis
+                Meer informatie over CMD ook op: <a href="https://www.hva.nl/cmd">www.hva.nl/cmd</a></p>
+                <p class="info">Wibautstraat 2-4 | 1091 GM | Amsterdam
+                +31 20 595 1855 | <a href="mailto:info-cmd@hva.nl">info-cmd@hva.nl</a></p>
+                <p>Je kunt ons via het formulier en/of bovenstaande gegevens bereiken of direct een bericht sturen naar één van
+                onderstaande contactpersonen.</p>
+            </article>
+        </section>
+        <h3>Contactpersonen</h3>
+        <section id="contactTeam">
+            <section class="contactPersoon">
+                <img alt="Harry Zengerink" src="https://www.cmd-amsterdam.nl/wp-content/uploads/2013/11/Harry-150.jpg" title="Harry Zengerink">
+                <h4>Harry Zengerink</h4>
+                <p>Opleidingsmanager</p>
+                <a href="mailto:h.zengerink@hva.nl">Mail</a>
+                <p>06 – 21 15 89 83</p>
+            </section>
+            <section class="contactPersoon">
+                <img alt="Marielle Beekman" src="https://www.cmd-amsterdam.nl/wp-content/uploads/2014/03/Marielle.jpg" title="Marielle Beekman">
+                <h4>Marielle Beekman</h4>
+                <p>Hoofd Onderwijsbureau</p>
+                <a href="mailto:m.beekman@hva.nl">Mail</a>
+                <p>+31 (0) 20 595 1855</p>
+            </section>
+            <section class="contactPersoon">
+                <img alt="Jos Kok" src="https://www.cmd-amsterdam.nl/wp-content/uploads/2017/11/Jos-Kok-2-e1509962997290.jpg" title="Jos Kok">
+                <h4>Jos Kok</h4>
+                <p>Stagecoördinator</p>
+                <a href="mailto:j.kok@hva.nl">Mail</a>
+                <p>06 – 21 15 71 22</p>
+            </section>
+            <section class="contactPersoon">
+                <img alt="Mattijs Blekemolen" src="https://www.cmd-amsterdam.nl/wp-content/uploads/2017/11/Mattijs-150.jpg" title="Mattijs Blekemolen">
+                <h4>Mattijs Blekemolen</h4>
+                <p>Externe Samenwerking</p>
+                <a href="mailto:m.blekemolen@hva.nl">Mail</a>
+                <p>06 – 21 15 61 86</p>
+            </section>
+            
+        </section>
+    </main>
+
+    <%- include("partials/foot") %>
+
+    <a id="to-top" class="mobile-enabled" style="bottom: -30px;"><i class="icon-angle-up"></i></a>
+</body>
+<script src="/dist/index-min.js"></script>
+
+</html>
