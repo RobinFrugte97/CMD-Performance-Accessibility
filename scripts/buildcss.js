@@ -11,5 +11,5 @@ return gulp.src('./static/css/*.css')
         "static/css/footer.css"
     ], { base: './' }))
     .pipe(concat('index.css'))
-    // .pipe(minify())
+    .pipe(minify())
     .pipe(gulp.dest('static/dist'))

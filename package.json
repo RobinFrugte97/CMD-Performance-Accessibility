@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/RobinFrugte97/project-2-1920#readme",
   "devDependencies": {
+    "compression": "^1.7.4",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-minify": "^3.1.0",
     "gulp-order": "^1.2.0",
-    "gulp-uglify": "^3.0.2",
     "rimraf": "^3.0.2"
   },
   "dependencies": {

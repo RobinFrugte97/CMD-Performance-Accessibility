@@ -1,9 +1,12 @@
 const express = require('express')
+const compression = require('compression')
+
 
 const app = express()
 const port = process.env.PORT || 3000
 
 app.use(express.static('static'))
+app.use(compression())
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 
