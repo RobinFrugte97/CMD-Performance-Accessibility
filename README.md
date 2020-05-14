@@ -3,17 +3,38 @@
 In dit project ga ik aan de slag met een bestaand project, om het op gebied van performance en accessibility te verbeteren. Ik heb gekozen voor de CMD website. Het is een Wordpress website, dus er valt veel aan te doen.
 
 
+## Install
+
+- Clone de repo: `git clone https://github.com/RobinFrugte97/project-2-1920.git`
+- Installeer benodigde packages: `npm install`
+- Run het project op poort 3000: `npm run start` of `node index.js`
+- Run het development script om te builden: `npm run dev`
+
+## [Livelink](https://robinfrugtewebproject2.herokuapp.com/)
+
 ## In deze readme:
 
 - [Onderzoek](#onderzoek)
+- [Todo lijst](#todo)
+- [Verbeteringen](#verbeteringen)
+    - [Serverside](#serverside)
+    - [Html](#html)
+    - [Css](#css)
+    - [Contrast](#contrast)
+    - [Hover- & Focusstates](#states)
+    - [Gulp](#gulp)
+    - [Overige fixes](#overig)
+- [Conclusie](#conclusie)
+- [Packages](#packages)
+
 
 # <a name="onderzoek"></a>Onderzoek
 
 Om te beginnen heb ik een audit gedraaid op de home-pagina van de [CMD website](https://www.cmd-amsterdam.nl/).
 
-![](/ss/cmd-audit.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/cmd-audit.png)
 
-De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei nietszeggende elementen, zoals `div`'jes en `span`'s. Voor screenreaders is dit onbruikbaar en dus totaal niet accessible.
+De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei nietszeggende elementen, zoals `div`'jes en `span`'s. Voor screenreaders is dit onbruikbaar en dus totaal niet accessible. Het formulier op de contact pagina bevat ook geen labels. Dit vormt ook een probleem voor screenreaders. 
 
 ### Scripts
 
@@ -25,8 +46,15 @@ De scripts worden ook niet `async` of `defer` ingeladen.
 
 De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 op 1 over te zetten naar een lokale versie zonder toegang tot de wordpress omgeving en de backend. De lokale website ziet er iets anders uit, maar heeft erg vergelijkbare performances.
 
+## Werkende pagina's:
 
-# Todo's
+Omdat het project één week duurt, heb ik beperkt tijd. Ik kies een paar pagina's uit om aan te werken. Dit zijn pagina's waar het één en ander aan te verbeteren valt op het gebied van performance en accessibility.
+
+- Homepagina
+- Contactpagina
+
+
+# <a name="todo"></a>Todo's
 
 - ✅ Serverside renderen (Performance fix)
 - ✅ Minify de CSS en JS (Performance fix)
@@ -39,9 +67,9 @@ De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 o
 - Voeg caching toe (Performance fix)
 
 
-# Verbeteringen
+# <a name="verbeteringen"></a>Verbeteringen
 
-## Server-side
+## <a name="serverside"></a>Server-side
 
 Ik bouw de website server-side op. Dit betekent dat de gebruiker uiteindelijk alleen html en minified-css binnen krijgt.
 
@@ -49,19 +77,19 @@ Ik bouw de website server-side op. Dit betekent dat de gebruiker uiteindelijk al
 
 Wordpress voegt een boel non-sense toe aan de website. Zo zit er bijvoorbeeld een winkelwagen systeem in de website die verborgen is met css, maar tevoorschijn komt zodra je de website lokaal draait.
 
-![](/ss/shoppingcart.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/shoppingcart.png)
 
 Dit heb ik verwijderd, met de bijbehorende css. Dit scheelt weer regels css en html en dat scheelt weer laadtijd.
 
 ---
 
-## Rebuilding html
+## <a name="html"></a>Rebuilding html
 
 Ik heb de homepagina compleet opnieuw opgebouwd. De originiële versie is één grote onsemantische puinhoop. Een en al `div`, onduidelijke nesting en classes/attributes.
 
 ### Oude html:
 
-![](/ss/attributeoverload.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/attributeoverload.png)
 
 
 
@@ -71,9 +99,9 @@ Ik heb de content van de pagina gepakt en deze vervolgens compleet semantisch en
 
 De nieuwe html is [hier](https://github.com/RobinFrugte97/project-2-1920/blob/master/views/index.ejs) te vinden
 
-![](/ss/goodhtml.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodhtml.png)
 
-![](/ss/semantichtml.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/semantichtml.png)
 
 Deze aanpassingen, samen met een geminifiede versie van de enorme berg css, zorgt voor een betere perfomance en een veel betere accessibility.
 
@@ -85,19 +113,19 @@ Het originele formulier op de contact pagina van de CMD website was een totale r
 
 Alle inputs zitten verstopt in `<span>`'s, die weer in `<p>`'s zitten verstopt.
 
-![](/ss/badform.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/badform.png)
 
 Zoals je kunt zien in de bovenstaande afbeelding, hebben de input velden ook geen fatsoenlijk label. Een screenreader kan hier weinig mee.
 
 #### Nieuw formulier:
 
-![](/ss/goodform.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodform.png)
 
 Het nieuwe formulier is in zijn geheel bijna even groot als één input veld van de CMD website met dezelfde styling. Ook is het nieuwe formulier accessible voor screenreaders, omdat het semantisch is opgebouwd. 
 
 ---
 
-## Rebuilding CSS
+## <a name="css"></a>Rebuilding CSS
 
 Met het omschrijven van de html heb ik tergelijk de CSS enorm ingekort en omgeschreven.
 
@@ -107,35 +135,35 @@ De CSS is opgedeeld in aparte css files om de developer experience te verbeteren
 
 ### Audit na opschonen CSS:
 
-![](/ss/removedwpclutter.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/removedwpclutter.png)
 
 ---
 
-## Contrast
+## <a name="contrast"></a>Contrast
 
 De originele site maakt gebruik van een aantal verschillende kleuren in links of buttons. Sommige van deze kleurcombinaties hebben onvoldoende contrast volgens WCAG. Dit kan het voor slechtziende lastig maken om te lezen wat er in de link of button staat.
 
 ### Oud button contrast:
 
-![](/ss/originelebutton.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/originelebutton.png)
 
 Ik heb gekozen om verder te gaan met de kleuren die de lokale versie biedt. De styling van de originele versie verschilt op sommige plekken van de online versie.
 
 ### Nieuw button contrast:
 
-![](/ss/goodrating.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodrating.png)
 
 ---
 
-## Focus- en hover-states
+## <a name="states"></a>Focus- en hover-states
 
 De CMD website heeft totaal geen focus-states en geen of hele slechte hover-states. Dit is een probleem voor mensen die hun muis niet kunnen gebruiken en de website met hun toetsenbord moeten navigeren.
 
-![](/ss/goodfocusstate.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodfocusstate.png)
 
 ---
 
-## Gulp
+## <a name="gulp"></a>Gulp
 
 Ik heb Gulp gebruikt om de performance van de website te verbeteren en de developer experience te verhogen. Het laat mij onder andere in aparte Javascript en css bestanden werken, en verkleint alle bestanden.
 
@@ -157,7 +185,7 @@ Een minifier voor css bestanden. Zorgt voor kleinere bestanden, wat weer zorgt v
 
 ---
 
-## Overige fixes
+## <a name="overig"></a>Overige fixes
 
 ### Lazyloader
 
@@ -178,9 +206,14 @@ Metadata toegevoegd voor de Search engine optimalisation.
 
 Alle html wordt als gzip gecompressed en afgeleverd bij de gebruiker. Ik maak gebruik van de `compression` node package.
 
-# Conclusie
+# <a name="conclusie"></a>Conclusie
+### Oud:
 
-![](/ss/lastaudit.png)
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/cmd-audit.png)
+
+### Nieuw:
+
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/lastaudit.png)
 
 Dit is de audit na alle aanpassingen in mijn versie van de CMD website. 
 
@@ -205,9 +238,9 @@ Wat heb ik gedaan om tot deze audit score te komen?
 
 ---
 
-# Packages
+# <a name="packages"></a>Packages
 
-Packages die ik heb gebruikt om de performance and developer experience te verbeteren:
+Nodejs packages die ik heb gebruikt om de performance and developer experience te verbeteren:
 
 - [Compression](https://www.npmjs.com/package/compression)
 - [Gulp](https://www.npmjs.com/package/gulp)
