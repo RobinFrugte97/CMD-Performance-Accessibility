@@ -131,6 +131,14 @@ Met het omschrijven van de html heb ik tergelijk de CSS enorm ingekort en omgesc
 
 De CSS is van meer dan 21000 regels naar ~550 regels gegaan. 
 
+### Oude css grootte en laadtijd:
+
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/oldcss.png)
+
+### Nieuwe css grootte en laadtijd:
+
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/newcss.png)
+
 De CSS is opgedeeld in aparte css files om de developer experience te verbeteren. De CSS is [hier](https://github.com/RobinFrugte97/project-2-1920/tree/master/static/css) te vinden. Voor de gebruiker wordt de CSS uiteraard samengevoegd en geminified met behulp van Gulp.
 
 ### Audit na opschonen CSS:
