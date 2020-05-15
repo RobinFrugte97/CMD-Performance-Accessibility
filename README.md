@@ -236,6 +236,7 @@ Wat heb ik gedaan om tot deze audit score te komen?
 - Css minifyen. 
 - Lazyloader toevoegen om de lading van images te verminderen.
 - Javascript minifyen.
+- Overige kleine fixes, zoals metatags en een doctype toevoegen om de Search engine optimalisatie te verbeteren.
 
 ### Wat ik nog had willen doen:
 
