@@ -13,8 +13,8 @@ In dit project ga ik aan de slag met een bestaand project, om het op gebied van 
 ## [Livelink](https://robinfrugtewebproject2.herokuapp.com/)
 
 ### Werkende pagina's:
-- Homepagina
-- Contactpagina
+- [Homepagina](https://robinfrugtewebproject2.herokuapp.com/)
+- [Contactpagina](https://robinfrugtewebproject2.herokuapp.com/contact)
 
 ## In deze readme:
 
@@ -44,8 +44,6 @@ De CMD website komt slecht uit de test op het gebied van performance. Ook valt e
 
 Er zijn een heel aantal plugins aanwezig op de cmd website. Deze plugins worden door middel van Jquery en normale Javascript bestanden ingeladen. Namelijk 28(!). Sommige scripts zijn ontzettend overbodig, zoals de Woocommerce en andere shoppingcart scripts. Deze functionaliteit wordt namelijk helemaal niet gebruikt op de cmd website.
 
-De scripts worden ook niet `async` of `defer` ingeladen.
-
 # Lokale versie CMD website
 
 De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 op 1 over te zetten naar een lokale versie zonder toegang tot de wordpress omgeving en de backend. De lokale website ziet er iets anders uit, maar heeft erg vergelijkbare performances.
@@ -54,8 +52,8 @@ De CMD website is een WordPress website. Het is niet eenvoudig om de website 1 o
 
 Omdat het project één week duurt, heb ik beperkt tijd. Ik kies een paar pagina's uit om aan te werken. Dit zijn pagina's waar het één en ander aan te verbeteren valt op het gebied van performance en accessibility.
 
-- Homepagina
-- Contactpagina
+- [Homepagina](https://robinfrugtewebproject2.herokuapp.com/)
+- [Contactpagina](https://robinfrugtewebproject2.herokuapp.com/contact)
 
 
 # <a name="todo"></a>Todo's
