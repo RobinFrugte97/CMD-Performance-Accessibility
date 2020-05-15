@@ -135,7 +135,7 @@ h3 {
 
 .mainContent > section {
     display: flex;
-    padding: 1em 25em;
+    padding: 1em 16%;
     align-items: center;
 }
 
