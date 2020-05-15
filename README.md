@@ -17,7 +17,6 @@ In dit project ga ik aan de slag met een bestaand project, om het op gebied van 
 - [Onderzoek](#onderzoek)
 - [Todo lijst](#todo)
 - [Verbeteringen](#verbeteringen)
-    - [Serverside](#serverside)
     - [Html](#html)
     - [Css](#css)
     - [Contrast](#contrast)
@@ -35,7 +34,7 @@ Om te beginnen heb ik een audit gedraaid op de home-pagina van de [CMD website](
 
 ![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/cmd-audit.png)
 
-De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei nietszeggende elementen, zoals `div`'jes en `span`'s. Voor screenreaders is dit onbruikbaar en dus totaal niet accessible. Het formulier op de contact pagina bevat ook geen labels. Dit vormt ook een probleem voor screenreaders. 
+De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei onnodige styling elementen, zoals `div`'jes en `span`'s. Het formulier op de contact pagina bevat ook geen labels. Dit vormt ook een probleem voor screenreaders. 
 
 ### Scripts
 
@@ -69,10 +68,6 @@ Omdat het project één week duurt, heb ik beperkt tijd. Ik kies een paar pagina
 
 
 # <a name="verbeteringen"></a>Verbeteringen
-
-## <a name="serverside"></a>Server-side
-
-Ik bouw de website server-side op. Dit betekent dat de gebruiker uiteindelijk alleen html en minified-css binnen krijgt.
 
 ## Remove non-sense
 
@@ -166,7 +161,11 @@ Ik heb gekozen om verder te gaan met de kleuren die de lokale versie biedt. De s
 
 ## <a name="states"></a>Focus- en hover-states
 
-De CMD website heeft totaal geen focus-states en geen of hele slechte hover-states. Dit is een probleem voor mensen die hun muis niet kunnen gebruiken en de website met hun toetsenbord moeten navigeren.
+De CMD website heeft totaal geen focus-states en geen of hele slechte hover-states. Dit is een probleem voor mensen die hun muis niet kunnen gebruiken en de website met hun toetsenbord moeten navigeren. Wanneer je op de online versie van de site door de navigatie heen probeert te navigeren met je toetsenbord, gebeurt er niets. De gebruiker kan niet zien waar hij/zij gebleven is.
+
+Dit heb ik opgelost door duidelijke focus-states toe te voegen aan alle bereikbare elementen op de website. Ik heb de eerder genoemde kleurcombinatie van de buttons gekozen, omdat het een goed contrast biedt. Voor de buttons heb ik deze kleuren omgekeerd op hover/focus.
+
+![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/buttonhover.png)
 
 ![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodfocusstate.png)
 
