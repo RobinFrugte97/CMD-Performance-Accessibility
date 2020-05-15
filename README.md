@@ -40,6 +40,8 @@ Om te beginnen heb ik een audit gedraaid op de home-pagina van de [CMD website](
 
 De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei onnodige styling elementen, zoals `div`'jes en `span`'s. Het formulier op de contact pagina bevat ook geen labels. Dit vormt ook een probleem voor screenreaders. 
 
+Verder zijn er een aantal veel te grote images op de website. Zowel qua bestand grootte als dimensies. Dit zou opgelost kunnen worden door de images van te voren correct te schalen, vóór het uploaden naar Wordpress en/of te compressen.
+
 ### Scripts
 
 Er zijn een heel aantal plugins aanwezig op de cmd website. Deze plugins worden door middel van Jquery en normale Javascript bestanden ingeladen. Namelijk 28(!). Sommige scripts zijn ontzettend overbodig, zoals de Woocommerce en andere shoppingcart scripts. Deze functionaliteit wordt namelijk helemaal niet gebruikt op de cmd website.
