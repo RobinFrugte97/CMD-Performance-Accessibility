@@ -25,6 +25,7 @@ In dit project ga ik aan de slag met een bestaand project, om het op gebied van 
     - [Gulp](#gulp)
     - [Overige fixes](#overig)
 - [Conclusie](#conclusie)
+    - [Wat ik nog had willen doen](#wat-ik-nog-had-willen-doen)
 - [Packages](#packages)
 
 
