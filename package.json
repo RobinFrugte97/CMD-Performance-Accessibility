@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/RobinFrugte97/project-2-1920#readme",
   "devDependencies": {
-    "compression": "^1.7.4",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -34,6 +33,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "ejs": "^3.1.2",
     "express": "^4.17.1"
   }
