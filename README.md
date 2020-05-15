@@ -12,6 +12,10 @@ In dit project ga ik aan de slag met een bestaand project, om het op gebied van 
 
 ## [Livelink](https://robinfrugtewebproject2.herokuapp.com/)
 
+### Werkende pagina's:
+- Homepagina
+- Contactpagina
+
 ## In deze readme:
 
 - [Onderzoek](#onderzoek)
