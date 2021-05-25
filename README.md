@@ -36,7 +36,7 @@ In dit project ga ik aan de slag met een bestaand project, om het op gebied van 
 
 Om te beginnen heb ik een audit gedraaid op de home-pagina van de [CMD website](https://www.cmd-amsterdam.nl/).
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/cmd-audit.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/cmd-audit.png)
 
 De CMD website komt slecht uit de test op het gebied van performance. Ook valt er nog het een en ander te verbeteren aan de accessibility. De website is in WordPress gemaakt en dus enorm bloated met allerlei onnodige styling elementen, zoals `div`'jes en `span`'s. Het formulier op de contact pagina bevat ook geen labels. Dit vormt ook een probleem voor screenreaders. 
 
@@ -77,7 +77,7 @@ Omdat het project één week duurt, heb ik beperkt tijd. Ik kies een paar pagina
 
 Wordpress voegt een boel non-sense toe aan de website. Zo zit er bijvoorbeeld een winkelwagen systeem in de website die verborgen is met css, maar tevoorschijn komt zodra je de website lokaal draait.
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/shoppingcart.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/shoppingcart.png)
 
 Dit heb ik verwijderd, met de bijbehorende css. Dit scheelt weer regels css en html en dat scheelt weer laadtijd.
 
@@ -89,7 +89,7 @@ Ik heb de homepagina compleet opnieuw opgebouwd. De originiële versie is één 
 
 ### Oude html:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/attributeoverload.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/attributeoverload.png)
 
 
 
@@ -99,9 +99,9 @@ Ik heb de content van de pagina gepakt en deze vervolgens compleet semantisch en
 
 De nieuwe html is [hier](https://github.com/RobinFrugte97/project-2-1920/blob/master/views/index.ejs) te vinden
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodhtml.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/goodhtml.png)
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/semantichtml.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/semantichtml.png)
 
 Deze aanpassingen, samen met een geminifiede versie van de enorme berg css, zorgt voor een betere perfomance en een veel betere accessibility.
 
@@ -113,13 +113,13 @@ Het originele formulier op de contact pagina van de CMD website was een totale r
 
 Alle inputs zitten verstopt in `<span>`'s, die weer in `<p>`'s zitten verstopt.
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/badform.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/badform.png)
 
 Zoals je kunt zien in de bovenstaande afbeelding, hebben de input velden ook geen fatsoenlijk label. Een screenreader kan hier weinig mee.
 
 #### Nieuw formulier:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodform.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/goodform.png)
 
 Het nieuwe formulier is in zijn geheel bijna even groot als één input veld van de CMD website met dezelfde styling. Ook is het nieuwe formulier accessible voor screenreaders, omdat het semantisch is opgebouwd. 
 
@@ -133,17 +133,17 @@ De CSS is van meer dan 21000 regels naar ~550 regels gegaan.
 
 ### Oude css grootte en laadtijd:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/oldcss.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/oldcss.png)
 
 ### Nieuwe css grootte en laadtijd:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/newcss.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/newcss.png)
 
 De CSS is opgedeeld in aparte css files om de developer experience te verbeteren. De CSS is [hier](https://github.com/RobinFrugte97/project-2-1920/tree/master/static/css) te vinden. Voor de gebruiker wordt de CSS uiteraard samengevoegd en geminified met behulp van Gulp.
 
 ### Audit na opschonen CSS:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/removedwpclutter.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/removedwpclutter.png)
 
 ---
 
@@ -153,13 +153,13 @@ De originele site maakt gebruik van een aantal verschillende kleuren in links of
 
 ### Oud button contrast:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/originelebutton.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/originelebutton.png)
 
 Ik heb gekozen om verder te gaan met de kleuren die de lokale versie biedt. De styling van de originele versie verschilt op sommige plekken van de online versie.
 
 ### Nieuw button contrast:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodrating.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/goodrating.png)
 
 ---
 
@@ -169,9 +169,9 @@ De CMD website heeft totaal geen focus-states en geen of hele slechte hover-stat
 
 Dit heb ik opgelost door duidelijke focus-states toe te voegen aan alle bereikbare elementen op de website. Ik heb de eerder genoemde kleurcombinatie van de buttons gekozen, omdat het een goed contrast biedt. Voor de buttons heb ik deze kleuren omgekeerd op hover/focus.
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/buttonhover.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/buttonhover.png)
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/goodfocusstate.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/goodfocusstate.png)
 
 ---
 
@@ -221,11 +221,11 @@ Alle html wordt als gzip gecompressed en afgeleverd bij de gebruiker. Ik maak ge
 # <a name="conclusie"></a>Conclusie
 ### Oud:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/cmd-audit.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/cmd-audit.png)
 
 ### Nieuw:
 
-![](https://github.com/RobinFrugte97/project-2-1920/blob/master/ss/lastaudit.png)
+![](https://raw.githubusercontent.com/RobinFrugte97/project-2-1920/master/ss/lastaudit.png)
 
 Dit is de audit na alle aanpassingen in mijn versie van de CMD website. 
 
